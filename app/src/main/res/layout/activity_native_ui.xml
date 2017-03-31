@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textOffers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="35dip"
+        android:text="YOUR OFFERS"
+        android:textColor="#ff7e7e7e"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/layoutNative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOffers"
+        android:layout_marginTop="10dip"
+        android:background="#FFFFFFFF">
+
+        <ImageView
+            android:id="@+id/nativeApiImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="6dip" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nativeApiImage"
+            android:layout_toRightOf="@+id/nativeApiImage"
+            android:text="title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTitle"
+            android:layout_toRightOf="@+id/nativeApiImage"
+            android:text="description" />
+
+        <TextView
+            android:id="@+id/textReward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textDescription"
+            android:layout_marginRight="5dip"
+            android:text="Earn"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/buttonFireNativeOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textReward"
+            android:layout_marginBottom="6dip"
+            android:layout_marginRight="3dip"
+            android:text="Complete" />
+    </RelativeLayout>
+
+</RelativeLayout>

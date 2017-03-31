@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+
+    <com.app.demo.widget.PagerRecyclerView
+        android:id="@+id/fragment_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:listitem="@layout/list_item" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="200dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="EmptyView" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!--  <TextView
+          android:id="@+id/emptyView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:clickable="false"
+          android:gravity="center"
+          android:text="EmptyView" />-->
+
+
+    <!--    <com.quhong.integrationwall.widget.NestedScrollingListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="hello" />
+
+    <com.app.demo.widget.ViewPagerGroup
+        android:id="@+id/mymultiViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/tv_hello">
+
+    </com.app.demo.widget.ViewPagerGroup>
+
+    <Button
+        android:id="@+id/bt_scrollLeft"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/bt_scrollRight"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/bt_scrollLeft"
+        android:text="Next" />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.demo">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Requested by Flurry -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- TrialPay's required permissions -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.app.demo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.app.demo.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.demo.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.app.demo.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.app.demo.MyViewGroupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.ScollerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.ScollerViewPagerAcitivy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.HeadViewPagerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.MaterialActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.CollapsingToolbarActivity"
+            android:label="@string/title_activity_collapsing_toolbar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.app.demo.widget.CollapsingToolbarLayoutActivity"
+            android:label="@string/title_activity_collapsing_toolbar_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.app.demo.StickyHeadersRecyclerViewActivity" />
+        <activity
+            android:name="com.app.demo.MaterialScollerActivity"
+            android:label="@string/title_activity_material_scoller"
+            android:theme="@style/MaterialTheme"></activity>
+    </application>
+
+</manifest>

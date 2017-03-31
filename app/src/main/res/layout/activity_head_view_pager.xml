@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.demo.widget.HeadViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F94A39"
+    android:orientation="vertical"
+    tools:context="com.app.demo.HeadViewPagerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:clickable="true"
+        android:divider="?android:attr/listDivider"
+        android:dividerPadding="1dp"
+        android:gravity="center"
+        android:onClick="headView"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="200dp"
+            android:paddingTop="2dp"
+            android:text="HeadView"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#A94CFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:onClick="fixHeadView"
+        android:divider="?android:attr/listDivider"
+        android:dividerPadding="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:paddingTop="2dp"
+            android:text="FixHeadView"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#A94CFF" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3880FF">
+
+    </ListView>
+
+</com.app.demo.widget.HeadViewPager>
